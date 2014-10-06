@@ -1,4 +1,4 @@
-hedgefundstartup
+Hedge Fund Startup
 ================
 
-Hedge Fund Startup
+The hedgefundstartup.co website.

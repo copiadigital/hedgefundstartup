@@ -1,23 +1,87 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
+<div class="cf main-container">
+    <div class="row">
+        <div class="cols">
+            <div class="col">
+                <h1>Webpage Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus</p>
+            </div>
+            <div class="col">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cols">
+            <div class="col">
+                <div class="prices">
+                    <header>
+                        <h2>Lorem</h2>
+                        <p>Lorem ipsum dolor sit!</p>
+                    </header>
+                    <article>
+                        <h3 class="capitalise">Lorem ipsum dolor sit amet</h3>
+                        <span class="bar">
+                            <span class="bar-percentage"></span>
+                        </span>
+                        <ul>
+                            <li class="minus"></li>
+                            <li class="plus"></li>
+                        </ul>
+                    <article>
+                    <footer>
+                        <p><strong>lorem ipsum dolor sit amet, consectetuer adipiscing</strong></p> 
+                        <p>dolor sit amet</p> 
+                        <h4 class="capitalise">Donec sodales sagittis magna</h4>
+                    </footer>
+                </div>
+            </div>
+            <div class="col">    
+                <ul class="large-bullets">
+                    <li>
+                        <i>&nbsp;</i>
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </li>
+                    <li>
+                        <i>&nbsp;</i>
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </li>
+                    <li>
+                        <i>&nbsp;</i>
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cols">
+            <div class="col">
+                <ul class="large-bullets testimonials">
+                    <li>
+                        <i>&nbsp;</i>
+                        <span class="name"></span>
+                        <span class="quote"></span>
+                    </li>
+                    <li>
+                        <i>&nbsp;</i>
+                        <span class="name"></span>
+                        <span class="quote"></span>
+                    </li> 
+                    <li>
+                        <i>&nbsp;</i>
+                        <span class="name"></span>
+                        <span class="quote"></span>
+                    </li>                                               
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

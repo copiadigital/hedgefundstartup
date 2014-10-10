@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass";
+@import "grid";
 @import "header";
 
 *{
@@ -21,12 +22,12 @@
 // Variables
 $base-font:"Arial", sans-serif;
 $base-font-colour:#000000;
-$width:1100px;
-$grid-padding:15px;
+$width:980px;
+$grid-padding:20px;
 $sidebar-width:300px;
 $content-min-height:300px;
 
-$header:#161616;
+$nearly-black:#161616;
 
 html{
     height:100%;    

@@ -1,0 +1,100 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+
+*{
+    @include box-sizing(border-box);
+}
+
+.cf:before,
+.cf:after{
+    content:" ";
+    display:table;
+}
+.cf:after{
+    clear:both;
+}
+.cf{
+    *zoom:1;
+}
+
+// Variables
+$base-font:"Arial", sans-serif;
+$base-font-colour:#000000;
+$width:980px;
+$grid-padding:20px;
+$sidebar-width:300px;
+$content-min-height:300px;
+
+$nearly-black:#161616;
+$white:#FFFFFF;
+
+html{
+    height:100%;    
+    font-kerning:normal; // Set the default for kerning
+    font-synthesis:none; // Don't allow the font to create sythetic bold/italic
+    text-rendering:optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
+    -webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
+    // Stop iPhone/iPad from scaling text
+    // Absolute measure here, as we're talking about devices, not screen size
+    @media screen and (max-width: 769px){  
+        -webkit-text-size-adjust:none;
+    }
+}
+
+body{
+    font-family:$base-font;
+    color:$base-font-colour;
+}
+
+// Fonts
+$base-font-size:10px; // Sets the browser default size.
+$base-line-height:10px; // Baseline grid.
+@include establish-baseline; // "This is where the magic happens"
+
+h1{
+    font-weight:600;
+    @include adjust-font-size-to(22px);
+    margin:0 auto rhythm(1, 14px) auto; // 1 = line below
+}
+
+h2{ 
+    @include adjust-font-size-to(16px);
+    margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
+    font-weight:bold;
+}
+
+p{ 
+    @include adjust-font-size-to(14px); 
+    margin:rhythm(1, 14px) 0 0 0; // 1 line below
+}
+
+a{
+    text-decoration:none;
+    color:$base-font-colour;
+    @include transition(color .3s ease);
+
+    &:hover,
+    &:focus,
+    &:active{
+        text-decoration:underline;
+    }
+}
+
+ul,
+ol{
+    list-style:square;
+
+    li{
+        @include adjust-font-size-to(14px);
+        margin:0 0 rhythm(1, 14px) 0;
+    }
+}
+
+strong{
+    font-weight:600;
+}
+
+em{
+    font-style:italic;
+}

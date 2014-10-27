@@ -1,4 +1,26 @@
 .header{
-	height:170px;
+	height:80px;
+	padding:20px 0;
 	background-color:$nearly-black;
+
+	img{
+		max-width:100%;
+	}
+}
+
+.logo,
+.main-menu{
+	float:left;
+}
+
+.main-menu{
+
+	li{
+		display:inline-block;
+
+		a{
+			color:$white;
+			text-transform:uppercase;
+		}
+	}
 }

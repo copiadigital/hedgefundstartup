@@ -1,7 +1,7 @@
 ---
 require:
 - jekyll-compass
-project_path: /Users/mitch/sites/hedgefundstartup
+project_path: /Users/tasharolland/sites/hedgefundstartup
 http_path: /
 css_dir: css
 sass_dir: _compass

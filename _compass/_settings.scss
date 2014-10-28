@@ -1,6 +1,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/typography";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300,300italic,900italic|Montserrat:400,700);
 
 *{
     @include box-sizing(border-box);
@@ -19,7 +20,8 @@
 }
 
 // Variables
-$base-font:"Arial", sans-serif;
+$header-font:'Montserrat', sans-serif;
+$base-font:'Lato', sans-serif;
 $base-font-colour:#000000;
 $width:980px;
 $grid-padding:20px;
@@ -28,6 +30,7 @@ $content-min-height:300px;
 
 $nearly-black:#161616;
 $white:#FFFFFF;
+$red:#E74C3C;
 
 html{
     height:100%;    
@@ -53,18 +56,46 @@ $base-line-height:10px; // Baseline grid.
 @include establish-baseline; // "This is where the magic happens"
 
 h1{
-    font-weight:600;
-    @include adjust-font-size-to(22px);
-    margin:0 auto rhythm(1, 14px) auto; // 1 = line below
+    font-family:$header-font;
+    font-weight:700;
+    color:$white;
+    text-transform:uppercase;
+    @include adjust-font-size-to(29px);
+    margin:0 auto rhythm(1, 16px) auto; // 1 = line below
 }
 
 h2{ 
+    font-family:$header-font;
+    font-weight:700;
+    color:$white;
+    text-transform:uppercase;
+    @include adjust-font-size-to(18px);
+    margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
+}
+
+h3{ 
+    font-family:$header-font;
+    font-weight:700;
+    color:$white;
+    text-transform:uppercase;
     @include adjust-font-size-to(16px);
     margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
-    font-weight:bold;
+}
+
+h4{ 
+    font-family:$header-font;
+    font-weight:700;
+    color:$white;
+    text-transform:uppercase;
+    @include adjust-font-size-to(14px);
+    margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
 }
 
 p{ 
+    font-family:$base-font;
+    font-style:italic;
+    color:$white;
+    @include text-shadow(0 1px 1px rgba(0,0,0,.75));
     @include adjust-font-size-to(14px); 
     margin:rhythm(1, 14px) 0 0 0; // 1 line below
 }

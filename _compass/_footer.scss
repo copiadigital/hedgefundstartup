@@ -1,12 +1,48 @@
 .footer{
-	padding:40px 0;
+	padding:30px 0;
 	background:url(../assets/images/footer-bkground.png) repeat #1E1E1E;
 
 	.col{
 		width:33%;
 	}
 
+	h4{
+		@include adjust-font-size-to(16px);
+    	margin:0 0 rhythm(2, 20px) 0; 		
+	}
+
 	ul{
+		font-family:$header-font;
 		list-style:none;
+
+		li{
+			width:49%;
+			display:inline-block;
+			@include adjust-font-size-to(12px);
+		}
+
+		a{
+			color:$white;
+			text-transform:uppercase;
+			font-weight:600;
+
+			&:hover{
+				text-decoration:none;
+			}
+		}
+	}
+
+	p{
+		margin-top:0;
+		font-style:normal;
+	}
+
+	.smaller{
+		font-family:$header-font;
+	}
+
+	input[type="email"]{
+		width:100%;
+		margin-bottom:1em;
 	}
 }

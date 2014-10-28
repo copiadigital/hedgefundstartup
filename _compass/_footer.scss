@@ -11,7 +11,7 @@
     	margin:0 0 rhythm(2, 20px) 0; 		
 	}
 
-	ul{
+	.page-links{
 		font-family:$header-font;
 		list-style:none;
 
@@ -39,10 +39,39 @@
 
 	.smaller{
 		font-family:$header-font;
+		margin-bottom:rhythm(2, 14px);
 	}
 
 	input[type="email"]{
 		width:100%;
 		margin-bottom:1em;
+	}
+
+	.social{
+		list-style:none;
+		
+		li{
+			display:inline-block;
+			width:40px;
+			margin:0 0 0 15px;
+
+			&:first-child{
+				margin-left:0;
+			}
+		}
+
+		a{
+			display:block;
+			color:$white;
+			height:40px;
+			line-height:40px;
+			padding:0 10px;
+			@include border-radius(3px);
+
+			&:hover{
+				text-decoration:none;
+				background-color:$red;
+			}
+		}								
 	}
 }

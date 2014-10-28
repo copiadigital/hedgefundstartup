@@ -11,6 +11,10 @@ input[type="email"]{
 	@include border-radius(3px);
 	@include background-clip(padding-box);
 	@include box-shadow(inset 2px 5px 5px rgba(0,0,0,.06));
+
+	&:focus{
+		outline:0;
+	}
 }
 
 input[type="email"]{

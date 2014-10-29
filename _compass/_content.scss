@@ -2,3 +2,15 @@
 	background:url(../assets/images/background.png) no-repeat center top;
 	@include background-size(cover);
 }
+
+.main-container{
+	padding:40px 0;
+}
+
+h1.red{
+    margin-bottom:0;
+}
+
+h1.white{
+    margin-top:0;
+}

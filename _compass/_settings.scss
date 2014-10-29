@@ -31,6 +31,7 @@ $content-min-height:300px;
 $nearly-black:#161616;
 $white:#FFFFFF;
 $red:#E74C3C;
+$blue:#34495E;
 
 html{
     height:100%;    
@@ -133,4 +134,20 @@ strong{
 
 em{
     font-style:italic;
+}
+
+.red{
+    color:$red;
+}
+
+.white{
+    color:$white;
+}
+
+.blue{
+    color:$blue;
+}
+
+.light{
+    font-weight:400;
 }

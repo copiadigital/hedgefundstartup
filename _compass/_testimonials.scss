@@ -1,8 +1,22 @@
 .testimonials{
+	margin:80px 0 40px 0;
 
 	li{
 		display:inline-block;
 		width:33%;
+	}
+
+	i{
+		width:64px;
+		height:64px;
+	}
+
+	.pic{
+		background:url(../assets/images/camera.png) no-repeat;
+	}
+
+	.content{
+		margin-left:80px;
 	}
 
 	h4{

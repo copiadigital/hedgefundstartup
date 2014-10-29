@@ -1,7 +1,7 @@
 .page-content{
 	background:url(../assets/images/background.png) no-repeat center top;
 	@include background-size(cover);
-	padding:40px 0;
+	padding-top:40px;
 }
 
 h1.red{

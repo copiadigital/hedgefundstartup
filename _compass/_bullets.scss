@@ -1,0 +1,36 @@
+.large-bullets{
+	list-style:none;
+
+	i{
+		display:inline-block;
+		width:100px;
+		height:100px;
+		float:left;
+		margin-right:40px;
+	}
+
+	.bag{
+		background:url(../assets/images/bag.png) no-repeat;
+	}
+
+	.clock{
+		background:url(../assets/images/clock.png) no-repeat;
+	}
+
+	.safe{
+		background:url(../assets/images/safe.png) no-repeat;
+	}	
+
+	.content{
+		margin-left:140px;
+
+		h3{
+			@include adjust-font-size-to(14px);
+		}
+
+		p{
+			color:#7F8C8D;
+			font-size:1em;
+		}
+	}
+}

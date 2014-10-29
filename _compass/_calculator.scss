@@ -1,25 +1,61 @@
 .prices{
 	background:url(../assets/images/calculator-bkground.png) no-repeat;
-	text-align:center;
 	height:494px;
 	width:462px;
 
-	header{
+	header,
+	article,
+	footer{
 		padding:20px 0;
 		margin:0 20px;
-		border-bottom:1px solid #CCC;
+	}
+
+	header{
+		border-bottom:1px solid #DFDFDF;
+	}
+
+	article{
+		min-height:200px;
+		border-bottom:1px solid #DFDFDF;
 	}
 	
 	h1{
+		text-align:center;
 		margin-bottom:0;
 	}
 
 	p{
+		text-align:center;
 		color:#7E8C8D;
 		font-style:normal;
-		font-weight:600;
+		font-weight:400;
 		font-family:$header-font;
 		margin-top:0;
 		@include text-shadow(none);
 	}
+
+	h3{
+		color:$blue;
+		@include adjust-font-size-to(14px);
+	}
+
+	.bar{
+		display:inline-block;
+		background-color:$nearly-black;
+		height:14px;
+		width:65%;
+		margin:6px 0;
+		@include border-radius(8px);
+
+		.bar-percentage{
+			display:inline-block;
+			background-color:$red;
+			height:8px;
+			width:45%;
+			margin:3px 0 3px 3px;
+			@include border-radius(8px);
+		}
+	}
+
+
 }

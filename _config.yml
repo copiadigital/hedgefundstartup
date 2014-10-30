@@ -14,7 +14,7 @@ github_username:  jekyll
 highlighter: true
 markdown: kramdown
 
-# Gems
-
-gems:
-- jekyll-compass
+# SASS settings
+sass:
+sass_dir: _sass
+style: :compressed

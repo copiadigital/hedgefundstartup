@@ -293,3 +293,27 @@
   animation: $str;      
 }
 
+/* BACKGROUND CLIP */
+@mixin background-clip($clip) {
+  $output: ();
+  $deprecated: ();
+  @if length($clip) > 0 {
+    @each $layer in $clip {
+      $output: append($output, unquote($layer), comma);
+      $deprecated: append($deprecated, legacy-box($layer), comma);
+    }
+  }
+  @else {
+    $output: $default-background-clip;
+    $deprecated: legacy-box($default-background-clip);
+  }
+  @include with-each-prefix(background-img-opts, $background-clip-support-threshold) {
+    @if $current-prefix == -moz or $current-prefix == -webkit {
+      // Legacy versions of Mozilla support a different syntax, prefixed.
+      @include prefix-prop(background-clip, $deprecated);
+    }
+    @else {
+      @include prefix-prop(background-clip, $output);
+    }
+  }
+}

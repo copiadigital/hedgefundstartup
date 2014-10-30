@@ -7,7 +7,8 @@
 	}
 
 	h4{
-		@include adjust-font-size-to(16px);
+		font-size:16px;
+		line-height:$baseline;
     	margin:0 0 rhythm(2, 20px) 0; 		
 	}
 
@@ -18,7 +19,7 @@
 		li{
 			width:49%;
 			display:inline-block;
-			@include adjust-font-size-to(12px);
+			font-size:12px;
 		}
 
 		a{
@@ -65,8 +66,8 @@
 			height:40px;
 			line-height:40px;
 			padding:0 8px;
-			@include border-radius(3px);
-			@include transition(background-color .3s ease);
+			border-radius:3px;
+			transition:background-color .3s ease;
 
 			&:hover{
 				text-decoration:none;

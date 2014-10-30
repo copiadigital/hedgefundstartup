@@ -31,9 +31,10 @@
 		color:#7E8C8D;
 		font-style:normal;
 		font-weight:400;
+		line-height:$baseline;
 		font-family:$header-font;
 		margin-top:0;
-		@include text-shadow(none);
+		text-shadow:none;
 
 		&.blue{
 			color:$blue;
@@ -42,7 +43,7 @@
 
 	h3{
 		color:$blue;
-		@include adjust-font-size-to(14px);
+		font-size:1.4em;
 	}
 
 	.bar{
@@ -51,7 +52,7 @@
 		height:14px;
 		width:65%;
 		margin:6px 0;
-		@include border-radius(8px);
+		border-radius:8px;
 
 		.bar-percentage{
 			display:inline-block;
@@ -59,7 +60,7 @@
 			height:8px;
 			width:45%;
 			margin:3px 0 3px 3px;
-			@include border-radius(8px);
+			border-radius:8px;
 		}
 	}
 

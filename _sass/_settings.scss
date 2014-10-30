@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300,300italic,900italic|Montserrat:400,700);
 
 *{
-    @include box-sizing(border-box);
+    box-sizing:border-box;
 }
 
 .cf:before,
@@ -27,87 +27,85 @@ $grid-padding:20px;
 $sidebar-width:300px;
 $content-min-height:300px;
 
+$base-font-size:10px; // Sets the browser default size.
+$baseline:1.2em;
+
 $nearly-black:#161616;
 $white:#FFFFFF;
 $red:#E74C3C;
 $blue:#34495E;
 
 html{
-    height:100%;    
-    font-kerning:normal; // Set the default for kerning
-    font-synthesis:none; // Don't allow the font to create sythetic bold/italic
-    text-rendering:optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
-    -webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
-    // Stop iPhone/iPad from scaling text
-    // Absolute measure here, as we're talking about devices, not screen size
-    @media screen and (max-width: 769px){  
-        -webkit-text-size-adjust:none;
-    }
+    height:100%;
+    font-size:100%; 
+    line-height:$baseline;
 }
 
 body{
+    font-size:$base-font-size;
     font-family:$base-font;
+    line-height:$baseline;
     color:$base-font-colour;
 }
 
-// Fonts
-$base-font-size:10px; // Sets the browser default size.
-$base-line-height:10px; // Baseline grid.
-@include establish-baseline; // "This is where the magic happens"
-
 h1{
+    font-size:2em;
     font-family:$header-font;
     font-weight:700;
+    line-height:$baseline;
     color:$white;
-    text-transform:uppercase;
-    @include adjust-font-size-to(29px);
-    margin:0 auto rhythm(1, 16px) auto; // 1 = line below
+    text-transform:uppercase;    
+    margin-bottom:$baseline;
 }
 
 h2{ 
+    font-size:1.8em;
     font-family:$header-font;
     font-weight:700;
+    line-height:$baseline;
     color:$white;
     text-transform:uppercase;
-    @include adjust-font-size-to(18px);
     margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
 }
 
 h3{ 
+    font-size:1.6em;
     font-family:$header-font;
     font-weight:700;
+    line-height:$baseline;
     color:$white;
     text-transform:uppercase;
-    @include adjust-font-size-to(16px);
     margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
 }
 
 h4{ 
+    font-size:1.4em;
     font-family:$header-font;
     font-weight:700;
+    line-height:$baseline;
     color:$white;
     text-transform:uppercase;
-    @include adjust-font-size-to(14px);
     margin:rhythm(2, 30px) 0 rhythm(1, 60px) 0; // 2 = line above, 1 = line below
 }
 
 p{ 
+    font-size:1.4em;
     font-family:$base-font;
     font-style:italic;
+    line-height:$baseline;
+    margin-bottom:$baseline;
     color:$white;
-    @include text-shadow(0 1px 1px rgba(0,0,0,.75));
-    @include adjust-font-size-to(14px); 
-    margin:rhythm(1, 14px) 0 0 0; // 1 line below
+    text-shadow:0 1px 1px rgba(0,0,0,.75);
 
     &.smaller{
-        @include adjust-font-size-to(12px); 
+        font-size:12px;
     }
 }
 
 a{
     text-decoration:none;
     color:$base-font-colour;
-    @include transition(color .3s ease);
+    transition:color .3s ease;
 
     &:hover,
     &:focus,
@@ -122,8 +120,9 @@ ol{
     color:$white;
 
     li{
-        @include adjust-font-size-to(14px);
-        margin:0 0 rhythm(1, 14px) 0;
+        font-size:1.4em;
+        line-height:$baseline;
+        margin-bottom:$baseline;
     }
 }
 

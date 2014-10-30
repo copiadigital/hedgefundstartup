@@ -1,0 +1,20 @@
+@mixin respond($point) {
+  @if $point == small {
+    @media (max-width: 1140px) { @content; }
+  }        
+  @else if $point == tablet {
+    @media (max-width: 799px) { @content; }
+  }
+  @else if $point == menu {
+    @media (max-width: 650px) { @content; }
+  }    
+  @else if $point == mobile {
+    @media (max-width: 599px) { @content; }
+  }
+}
+
+.mobile-touch-overflow,
+.mobile-touch-overflow * {
+    /* some level of transform keeps elements from blinking out of visibility on iOS */
+    -webkit-transform: rotateY(0);
+}

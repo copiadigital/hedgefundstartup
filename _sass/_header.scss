@@ -62,6 +62,10 @@
 @include respond(mobile){
 	.header{
 		background-color:$off-white;
+
+		.button{
+			display:none;
+		}
 	}
 
 	.main-menu{

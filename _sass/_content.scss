@@ -11,3 +11,33 @@ h1.red{
 h1.white{
     margin-top:0;
 }
+
+@include respond(mobile){
+	.page-content{
+		background-image:url(../assets/images/background-mobile.png);
+		background-size:auto;
+	}
+
+	h1.red{
+		font-size:5.2em;
+	}
+
+	h1.white{
+		margin-bottom:0px;
+		color:$blue;
+		font-size:4.2em;
+	}
+
+	.home-para{
+		color:$grey;
+		font-size:1.6em;
+		font-family:$header-font;
+		font-style:normal;
+		text-shadow:none;
+	}
+
+    .hide{
+        display:block;
+    }	
+
+}

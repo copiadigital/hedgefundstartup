@@ -26,6 +26,7 @@
 
 @include respond(mobile){
 	.col{
-		display:block;
+		display:block !important;
+		width:100% !important;
 	}
 }

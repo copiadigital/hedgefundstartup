@@ -1,6 +1,9 @@
+.large-bullets-container{
+	margin-top:80px;
+}
+
 .large-bullets{
 	list-style:none;
-	margin-top:80px;
 
 	i{
 		display:inline-block;
@@ -37,6 +40,28 @@
 }
 
 @include respond(mobile){
+
+	.large-bullets-container{
+		margin-top:140px;
+
+		> span{
+			font-size:3.7em;
+			font-family:$header-font;
+			text-transform:uppercase;
+			display:inline-block;
+			text-align:center;
+			width:100%;
+			margin-bottom:20px;
+
+			span{
+				display:inline-block;
+			}
+		}
+	}
+
+	.large-bullets{
+		background:url(../assets/images/line.png) no-repeat top center;
+	}	
 
 	.large-bullets i{
 		clear:left;

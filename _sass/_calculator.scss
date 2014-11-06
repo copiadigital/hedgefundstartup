@@ -75,3 +75,13 @@
 		width:100%;
 	}
 }
+
+@include respond(mobile){
+	.prices{
+		background-image:url(../assets/images/calculator-bkground-mobile.png);
+
+		h4{
+			margin-bottom:1em;
+		}
+	}
+}

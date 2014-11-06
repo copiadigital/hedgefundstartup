@@ -23,3 +23,9 @@
 	vertical-align:top;
 	padding:0 $grid-padding;
 }
+
+@include respond(mobile){
+	.col{
+		display:block;
+	}
+}

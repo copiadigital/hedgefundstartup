@@ -29,3 +29,11 @@
 		margin:0;
 	}
 }
+
+@include respond(mobile){
+	.testimonials li{
+		width:100%;
+		display:block;
+		margin:0;
+	}
+}

@@ -61,9 +61,32 @@
 
 	.large-bullets{
 		background:url(../assets/images/line.png) no-repeat top center;
-	}	
 
-	.large-bullets i{
-		clear:left;
+		li{
+			display:none;
+			padding-top:1.5em;
+
+			&:first-child{
+				display:block;
+			}
+		}
+
+		i{
+			clear:left;
+		}
+
+		.bag{
+    		background-image:url(../assets/images/bag-grey.png);
+		}
+
+		h3{
+			color:$dark-blue;
+		}
+
+		p{
+			text-shadow:none;
+			font-family:$header-font;
+			font-style:normal;
+		}
 	}
 }

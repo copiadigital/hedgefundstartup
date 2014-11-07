@@ -31,9 +31,27 @@
 }
 
 @include respond(mobile){
-	.testimonials li{
-		width:100%;
-		display:block;
-		margin:0;
+	.testimonials{
+		margin:80px 0;
+
+		li{
+			display:none;
+			width:100%;
+			margin:0;
+		}
+
+		.pic{
+			background-image:url(../assets/images/camerax2.png);
+			width:101px;
+			height:101px;
+		}
+
+		.content{
+			margin-left:140px;
+		}
+
+		.name{
+			font-size:1.4em;
+		}
 	}
 }

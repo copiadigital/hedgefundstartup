@@ -3,7 +3,7 @@
 	background-color:$nearly-black;
 
 	.logo{
-		padding:20px 0;
+		margin:20px 0;
 	}
 
 	img{
@@ -64,6 +64,16 @@
 		background-color:$off-white;
 
 		.button{
+			display:none;
+		}
+
+		.logo{
+			background:url(../assets/images/logo-blue.png) no-repeat;
+			width:219px;
+			height:39px;
+		}
+
+		img{
 			display:none;
 		}
 	}

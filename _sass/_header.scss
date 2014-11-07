@@ -9,6 +9,11 @@
 	img{
 		max-width:100%;
 	}
+
+	input, 
+	label{
+		display:none;
+	}
 }
 
 .logo,
@@ -75,6 +80,11 @@
 
 		img{
 			display:none;
+		}
+
+		input, 
+		label{
+			display:block;
 		}
 	}
 

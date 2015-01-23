@@ -49,24 +49,6 @@
 		margin:0;
 	}
 
-	.bar{
-		display:inline-block;
-		background-color:$nearly-black;
-		height:16px;
-		width:65%;
-		margin:6px 0;
-		border-radius:8px;
-
-		.bar-percentage{
-			display:inline-block;
-			background-color:$red;
-			height:10px;
-			width:45%;
-			margin:3px 0 3px 3px;
-			border-radius:8px;
-		}
-	}
-
 	h4{
 		font-size:2em;
 		text-align:center;
@@ -74,6 +56,16 @@
 		bottom:0;
 		left:0;
 		width:100%;
+	}
+
+	.package-list{
+		margin-left:60px;
+
+		li{
+			margin:8px 0;
+			color:$nearly-black;
+			font-size:1.5em;
+		}
 	}
 }
 

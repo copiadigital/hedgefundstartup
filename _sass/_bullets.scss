@@ -26,7 +26,7 @@
 
 	.safe{
 		background:url(../assets/images/safe.png) no-repeat;
-	}	
+	}
 
 	.content{
 		margin-left:140px;
@@ -40,6 +40,15 @@
 	p{
 		color:#7F8C8D;
 		font-size:1em;
+	}
+}
+
+.tick-bullets{
+	list-style:none;
+
+	li{
+		padding-left:25px;
+		background:url(../assets/images/tick-icon.png) no-repeat left center;
 	}
 }
 

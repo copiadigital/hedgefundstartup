@@ -1,5 +1,5 @@
 .button{
-	display:block;	
+	display:block;
 	font-family:$header-font;
 	font-weight:700;
 	font-size:1.3em;
@@ -10,8 +10,9 @@
 	background:url(../assets/images/arrow.png) no-repeat left center $red;
 	text-shadow:0 1px 1px rgba(0,0,0,.31);
 	border-radius:3px;
+	border:none;
+	margin:20px 0;
 	transition:background-color .3s ease;
-	float:right;
 
 	&:hover{
 		background-color:darken($red, 12%);

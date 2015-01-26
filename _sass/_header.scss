@@ -18,6 +18,11 @@
 	.col{
 		width:100%;
 	}
+
+	.button{
+		float:right;
+		margin:18px 0;
+	}
 }
 
 .logo,
@@ -61,11 +66,6 @@
 			}
 		}
 	}
-}
-
-.button{
-	float:left;
-	margin:18px 0;
 }
 
 @include respond(mobile){

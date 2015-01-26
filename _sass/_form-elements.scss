@@ -1,19 +1,27 @@
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+textarea{
+    display:block;
 	background-color:#F9F7F3;
 	font-family:$header-font;
 	color:#7D7C7B;
 	height:40px;
 	padding:0 40px 0 10px;
+    margin:0 0 10px;
 	border:0;
 	font-size:12px;
-	border-radius:3px;
+	@include border-radius(3px);
 	background-clip:padding-box;
 	box-shadow:inset 2px 5px 5px rgba(0,0,0,.06);
 
 	&:focus{
 		outline:0;
 	}
+}
+
+textarea{
+    height:auto;
+    padding-top:10px;
 }
 
 input[type="email"]{

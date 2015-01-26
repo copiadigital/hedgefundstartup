@@ -10,11 +10,13 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+permalink: pretty
+
 # Build settings
 highlighter: true
 markdown: kramdown
 
-# Gems
-
-gems:
-- jekyll-compass
+# SASS settings
+sass:
+sass_dir: _sass
+style: :compressed

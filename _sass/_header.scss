@@ -3,11 +3,25 @@
 	background-color:$nearly-black;
 
 	.logo{
-		padding:20px 0;
+		margin:25px 0;
 	}
 
 	img{
 		max-width:100%;
+	}
+
+	input,
+	label{
+		display:none;
+	}
+
+	.col{
+		width:100%;
+	}
+
+	.button{
+		float:right;
+		margin:18px 0;
 	}
 }
 
@@ -17,7 +31,7 @@
 }
 
 .main-menu{
-	margin:0 45px;
+	margin:0 40px 0 45px;
 
 	li{
 		font-family:$header-font;
@@ -36,7 +50,7 @@
 			text-transform:uppercase;
 			height:76px;
 			line-height:76px;
-			@include transition(border-color .3s ease);
+			transition:border-color .3s ease;
 
 
 			&:hover{
@@ -54,7 +68,31 @@
 	}
 }
 
-.button{
-	float:right;
-	margin:20px 0;
+@include respond(mobile){
+	.header{
+		background-color:$off-white;
+
+		.button{
+			display:none;
+		}
+
+		.logo{
+			background:url(../assets/images/logo-blue.png) no-repeat;
+			width:219px;
+			height:39px;
+		}
+
+		img{
+			display:none;
+		}
+
+		input,
+		label{
+			display:block;
+		}
+	}
+
+	.main-menu{
+		display:none;
+	}
 }

@@ -7,18 +7,20 @@
 	}
 
 	h4{
-		@include adjust-font-size-to(16px);
-    	margin:0 0 rhythm(2, 20px) 0; 		
+		font-size:16px;
+    	margin-top:0; 		
 	}
 
-	ul{
+	.page-links{
 		font-family:$header-font;
 		list-style:none;
+		margin-bottom:20px;
 
 		li{
 			width:49%;
 			display:inline-block;
-			@include adjust-font-size-to(12px);
+			font-size:12px;
+			margin-bottom:2px;
 		}
 
 		a{
@@ -44,5 +46,33 @@
 	input[type="email"]{
 		width:100%;
 		margin-bottom:1em;
+	}
+
+	.social{
+		list-style:none;
+		
+		li{
+			display:inline-block;
+			margin:0 0 0 10px;
+
+			&:first-child{
+				margin-left:0;
+			}
+		}
+
+		a{
+			display:block;
+			color:$white;
+			height:40px;
+			line-height:40px;
+			padding:0 8px;
+			border-radius:3px;
+			transition:background-color .3s ease;
+
+			&:hover{
+				text-decoration:none;
+				background-color:$red;
+			}
+		}								
 	}
 }

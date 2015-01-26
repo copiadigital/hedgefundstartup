@@ -1,0 +1,57 @@
+.testimonials{
+	margin:80px 0 40px 0;
+
+	li{
+		display:inline-block;
+		width:33%;
+	}
+
+	i{
+		width:64px;
+		height:64px;
+	}
+
+	.pic{
+		background:url(../assets/images/quote.png) no-repeat;
+	}
+
+	.content{
+		margin-left:80px;
+	}
+
+	h4{
+		font-size:1em;
+		color:$red;
+		margin:0;
+	}
+
+	p{
+		margin:0;
+	}
+}
+
+@include respond(mobile){
+	.testimonials{
+		margin:80px 0;
+
+		li{
+			display:none;
+			width:100%;
+			margin:0;
+		}
+
+		.pic{
+			background-image:url(../assets/images/quotex2.png);
+			width:101px;
+			height:101px;
+		}
+
+		.content{
+			margin-left:140px;
+		}
+
+		.name{
+			font-size:1.4em;
+		}
+	}
+}

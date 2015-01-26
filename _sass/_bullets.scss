@@ -1,0 +1,113 @@
+.large-bullets-container{
+	margin-top:80px;
+}
+
+.large-bullets{
+	list-style:none;
+
+	li{
+		margin-bottom:40px;
+	}
+
+	i{
+		display:inline-block;
+		width:100px;
+		height:100px;
+		float:left;
+	}
+
+	.bag{
+		background:url(../assets/images/bag.png) no-repeat;
+	}
+
+	.handshake{
+		background:url(../assets/images/handshake.png) no-repeat;
+	}
+
+	.clipboard{
+		background:url(../assets/images/clipboard.png) no-repeat;
+	}
+
+	.clock{
+		background:url(../assets/images/clock.png) no-repeat;
+	}
+
+	.safe{
+		background:url(../assets/images/safe.png) no-repeat;
+	}
+
+	.content{
+		margin-left:140px;
+
+		h3{
+			font-size:1.4em;
+			margin:0;
+		}
+	}
+
+	p{
+		color:#7F8C8D;
+		font-size:1em;
+	}
+}
+
+.tick-bullets{
+	list-style:none;
+
+	li{
+		padding-left:25px;
+		background:url(../assets/images/tick-icon.png) no-repeat left center;
+	}
+}
+
+@include respond(mobile){
+
+	.large-bullets-container{
+		margin-top:140px;
+
+		> span{
+			font-size:3.7em;
+			font-family:$header-font;
+			text-transform:uppercase;
+			display:inline-block;
+			text-align:center;
+			width:100%;
+			margin-bottom:20px;
+
+			span{
+				display:inline-block;
+			}
+		}
+	}
+
+	.large-bullets{
+		background:url(../assets/images/line.png) no-repeat top center;
+
+		li{
+			display:none;
+			padding-top:1.5em;
+
+			&:first-child{
+				display:block;
+			}
+		}
+
+		i{
+			clear:left;
+		}
+
+		.bag{
+    		background-image:url(../assets/images/bag-grey.png);
+		}
+
+		h3{
+			color:$dark-blue;
+		}
+
+		p{
+			text-shadow:none;
+			font-family:$header-font;
+			font-style:normal;
+		}
+	}
+}

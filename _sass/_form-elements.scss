@@ -2,17 +2,18 @@ input[type="text"],
 input[type="email"],
 textarea{
     display:block;
-	background-color:#F9F7F3;
-	font-family:$header-font;
-	color:#7D7C7B;
-	height:40px;
-	padding:0 40px 0 10px;
+    background-color:#f9f7f3;
+    font-family:$header-font;
+    color:#7d7c7b;
+    height:40px;
+    width:60%;
+    padding:0 40px 0 10px;
     margin:0 0 10px;
-	border:0;
-	font-size:12px;
-	@include border-radius(3px);
-	background-clip:padding-box;
-	box-shadow:inset 2px 5px 5px rgba(0,0,0,.06);
+    border:0;
+    font-size:12px;
+    @include border-radius(3px);
+    background-clip:padding-box;
+    box-shadow:inset 2px 5px 5px rgba(0,0,0,.06);
 
 	&:focus{
 		outline:0;
@@ -22,10 +23,23 @@ textarea{
 textarea{
     height:auto;
     padding-top:10px;
+    width:100%;
 }
 
-input[type="email"]{
+input[name="email"]{
 	background:url(../assets/images/mail.png) no-repeat center right #F9F7F3;
+}
+
+input[name="name"]{
+    background:url(../assets/images/person.png) no-repeat center right #F9F7F3;
+}
+
+input[name="phone"]{
+    background:url(../assets/images/phone.png) no-repeat center right #F9F7F3;
+}
+
+input[name="company"]{
+    background:url(../assets/images/company.png) no-repeat center right #F9F7F3;
 }
 
 .placeholdersjs{

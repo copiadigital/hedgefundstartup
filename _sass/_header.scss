@@ -70,19 +70,8 @@
 
 @include respond(mobile){
 	.header{
-		background-color:$off-white;
 
 		.button{
-			display:none;
-		}
-
-		.logo{
-			background:url(../assets/images/logo-blue.png) no-repeat;
-			width:219px;
-			height:39px;
-		}
-
-		img{
 			display:none;
 		}
 

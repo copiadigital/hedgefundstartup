@@ -81,10 +81,9 @@
 	}
 
 	.large-bullets{
-		background:url(../assets/images/line.png) no-repeat top center;
 
 		li{
-			display:none;
+			display:block;
 			padding-top:1.5em;
 
 			&:first-child{
@@ -94,10 +93,6 @@
 
 		i{
 			clear:left;
-		}
-
-		.bag{
-    		background-image:url(../assets/images/bag-grey.png);
 		}
 
 		h3{

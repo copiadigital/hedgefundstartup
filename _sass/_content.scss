@@ -14,7 +14,6 @@ h1.white{
 
 @include respond(mobile){
 	.page-content{
-		background-image:url(../assets/images/background-mobile.png);
 		background-size:auto;
 	}
 
@@ -24,7 +23,6 @@ h1.white{
 
 	h1.white{
 		margin-bottom:0px;
-		color:$blue;
 		font-size:4.2em;
 	}
 
@@ -38,6 +36,6 @@ h1.white{
 
     .hide{
         display:block;
-    }	
+    }
 
 }

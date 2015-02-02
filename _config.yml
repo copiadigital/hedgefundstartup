@@ -13,7 +13,6 @@ github_username:  jekyll
 permalink: pretty
 
 # Build settings
-highlighter: true
 markdown: kramdown
 
 # SASS settings
